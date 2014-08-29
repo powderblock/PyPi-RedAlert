@@ -4,6 +4,7 @@ import feedparser
 
 gpio.setmode(gpio.BCM)
 gpio.setup(14, gpio.OUT)
+gpio.output(14, gpio.LOW)
 
 def updateRSS():
     global redditRSS, date, title
