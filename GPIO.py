@@ -27,10 +27,11 @@ while(1):
         print("New post!\n")
         print newPost
         post = newPost
-        for i in range(1, 15):
+        for i in range(0, 5):
                 gpio.output(14, gpio.LOW)
                 time.sleep(1)
                 gpio.output(14, gpio.HIGH)
+                time.sleep(1)
 
     else:
         print("No new post.")
