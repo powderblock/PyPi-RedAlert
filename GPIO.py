@@ -36,3 +36,4 @@ while(1):
 
     else:
         print("No new post.")
+    gpio.output(14, gpio.LOW)
